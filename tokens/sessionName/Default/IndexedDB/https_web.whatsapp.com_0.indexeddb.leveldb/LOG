@@ -1,25 +1,4 @@
-2025/02/09-12:50:56.948 3498 Reusing MANIFEST C:\Users\marlo\OneDrive\Desktop\dev\wppconnect\tokens\sessionName\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/02/09-12:50:56.948 3498 Recovering log #97
-2025/02/09-12:50:56.954 3498 Reusing old log C:\Users\marlo\OneDrive\Desktop\dev\wppconnect\tokens\sessionName\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000097.log 
-2025/02/09-12:50:56.954 3498 Delete type=2 #96
-2025/02/09-12:50:57.997 51d0 Level-0 table #102: started
-2025/02/09-12:50:58.017 51d0 Level-0 table #102: 190164 bytes OK
-2025/02/09-12:50:58.021 51d0 Delete type=0 #97
-2025/02/09-12:50:58.022 3498 Manual compaction at level-0 from '\x00+\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00,\x00\x00\x00' @ 0 : 0; will stop at '\x00,\x00\x00\x05' @ 131017 : 1
-2025/02/09-12:50:58.023 3498 Compacting 1@0 + 1@1 files
-2025/02/09-12:50:58.109 3498 Generated table #103@0: 64843 keys, 1357666 bytes
-2025/02/09-12:50:58.109 3498 Compacted 1@0 + 1@1 files => 1357666 bytes
-2025/02/09-12:50:58.113 3498 compacted to: files[ 0 1 1 0 0 0 0 ]
-2025/02/09-12:50:58.114 3498 Delete type=2 #102
-2025/02/09-12:50:58.115 3498 Manual compaction at level-0 from '\x00,\x00\x00\x05' @ 131017 : 1 .. '\x00,\x00\x00\x00' @ 0 : 0; will stop at (end)
-2025/02/09-12:50:58.122 3498 Level-0 table #105: started
-2025/02/09-12:50:58.136 3498 Level-0 table #105: 438 bytes OK
-2025/02/09-12:50:58.141 3498 Delete type=2 #99
-2025/02/09-12:50:58.141 3498 Delete type=0 #101
-2025/02/09-12:50:58.142 3498 Manual compaction at level-0 from '\x00,\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00-\x00\x00\x00' @ 0 : 0; will stop at '\x00,\x00\x00\x05' @ 131050 : 0
-2025/02/09-12:50:58.142 3498 Compacting 1@0 + 1@1 files
-2025/02/09-12:50:58.225 3498 Generated table #106@0: 64841 keys, 1357657 bytes
-2025/02/09-12:50:58.225 3498 Compacted 1@0 + 1@1 files => 1357657 bytes
-2025/02/09-12:50:58.230 3498 compacted to: files[ 0 1 1 0 0 0 0 ]
-2025/02/09-12:50:58.231 3498 Delete type=2 #105
-2025/02/09-12:50:58.231 3498 Manual compaction at level-0 from '\x00,\x00\x00\x05' @ 131050 : 0 .. '\x00-\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/02/09-12:56:13.752 57ec Reusing MANIFEST C:\Users\marlo\OneDrive\Desktop\dev\wppconnect\tokens\sessionName\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/02/09-12:56:13.753 57ec Recovering log #104
+2025/02/09-12:56:13.758 57ec Reusing old log C:\Users\marlo\OneDrive\Desktop\dev\wppconnect\tokens\sessionName\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000104.log 
+2025/02/09-12:56:13.758 57ec Delete type=2 #103
