@@ -1,2 +1,3 @@
-2025/02/09-10:29:52.135 1c48 Creating DB C:\Users\marlo\OneDrive\Desktop\dev\wppconnect\tokens\sessionName\Default\Sync Data\LevelDB since it was missing.
-2025/02/09-10:29:52.244 1c48 Reusing MANIFEST C:\Users\marlo\OneDrive\Desktop\dev\wppconnect\tokens\sessionName\Default\Sync Data\LevelDB/MANIFEST-000001
+2025/02/09-10:34:28.914 36a8 Reusing MANIFEST C:\Users\marlo\OneDrive\Desktop\dev\wppconnect\tokens\sessionName\Default\Sync Data\LevelDB/MANIFEST-000001
+2025/02/09-10:34:28.915 36a8 Recovering log #3
+2025/02/09-10:34:28.916 36a8 Reusing old log C:\Users\marlo\OneDrive\Desktop\dev\wppconnect\tokens\sessionName\Default\Sync Data\LevelDB/000003.log 
