@@ -11,7 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "@wppconnect-team/wppconnect": "^1.35.2",
-    "fs": "^0.0.1-security",
-    "sharp": "^0.33.5"
+    "fs": "^0.0.1-security"
   }
 }
