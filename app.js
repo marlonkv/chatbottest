@@ -1,6 +1,24 @@
 const fs = require('fs');
 const wppconnect = require('@wppconnect-team/wppconnect');
 
+const puppeteer = require('puppeteer');
+
+(async () => {
+  const browser = await puppeteer.launch({
+    executablePath: '/usr/bin/chromium', // Caminho do Chromium no Render
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
+
+  const page = await browser.newPage();
+  await page.goto('https://chatbottest-fc87.onrender.com');
+
+  console.log(await page.title());
+  await browser.close();
+})();
+
+
+
 wppconnect
   .create({
     session: 'sessionName',
