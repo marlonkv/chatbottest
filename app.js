@@ -1,5 +1,3 @@
-const fs = require('fs');
-const path = require('path');
 const wppconnect = require('@wppconnect-team/wppconnect');
 
 wppconnect
@@ -8,38 +6,31 @@ wppconnect
     headless: true,
     useChrome: false,
     puppeteerOptions: {
-      executablePath: '/usr/bin/chromium',
+      executablePath: '/usr/bin/chromium-browser', // Caminho para o Chromium já instalado
       args: ['--no-sandbox', '--disable-setuid-sandbox']
     },
     catchQR: (base64Qr, asciiQR) => {
-      console.log(asciiQR); // Optional to log the QR in the terminal
-
-      // Regular expression to decode base64 image data
+      console.log(asciiQR); // Logar QR Code no terminal
       const matches = base64Qr.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
       if (matches.length !== 3) {
         return new Error('Invalid input string');
       }
-
       const response = {
         type: matches[1],
         data: Buffer.from(matches[2], 'base64')
       };
 
       const imageBuffer = response.data;
-      
-      // Saving the QR code image as out.png in the current directory
-      fs.writeFile(path.join(__dirname, 'out.png'), imageBuffer, 'binary', (err) => {
+      require('fs').writeFile('out.png', imageBuffer, 'binary', (err) => {
         if (err) {
-          console.log('Error saving the QR code image:', err);
-        } else {
-          console.log('QR code image saved as out.png');
+          console.log(err);
         }
       });
     },
     logQR: false,
   })
   .then((client) => start(client))
-  .catch((error) => console.log('Error initializing WPPConnect:', error));
+  .catch((error) => console.log('Erro ao iniciar o WPPConnect:', error));
 
 function start(client) {
   client.onMessage((message) => {
@@ -47,10 +38,10 @@ function start(client) {
       client
         .sendText(message.from, 'Oi')
         .then((result) => {
-          console.log('Message sent successfully:', result);
+          console.log('Mensagem enviada:', result);
         })
         .catch((error) => {
-          console.error('Error when sending message:', error);
+          console.error('Erro ao enviar mensagem:', error);
         });
     }
   });
